@@ -1,6 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+  <div id="top">
+    <template>
+    <Carousel autoplay>
+        <Carousel-item>
+            <div class="demo-carousel">1</div>
+        </Carousel-item>
+        <Carousel-item>
+            <div class="demo-carousel">2</div>
+        </Carousel-item>
+        <Carousel-item>
+            <div class="demo-carousel">3</div>
+        </Carousel-item>
+        <Carousel-item>
+            <div class="demo-carousel">4</div>
+        </Carousel-item>
+    </Carousel>
+</template>
+  </div>
     <router-view/>
   </div>
 </template>
@@ -12,12 +29,16 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+body{
+  margin: 0;
+  padding: 0;
+}
+#top{
+  
+}
+.demo-carousel{
+height: 300px;
+
 }
 </style>
